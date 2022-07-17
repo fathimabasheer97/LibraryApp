@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-image: url("https://th.bing.com/th/id/R.caa9b1c01a6693e7042a052e0592bc57?rik=6Z30bMQZQOApTw&pid=ImgRaw&r=0");
+    background-size: cover;
+    background-attachment: fixed;
+}

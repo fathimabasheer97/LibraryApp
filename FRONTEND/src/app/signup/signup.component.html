@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="formWraper">
+
+        <!-- Left section of responsive registration form -->
+        <div class="form">
+            <form class="form1" #userSignin="ngForm" (ngSubmit)="userVerify()">
+            <h2>Create Account</h2>
+            <hr>
+            <div class="Div"></div>
+
+            <p class="text">Sign Up with Email Address</p>
+            <div class="formGroup">
+                <!-- <i class="far fa-user"></i> -->
+                <input type="text" placeholder="Name" class="form-control" id="name" [(ngModel)]="User.name" name="name" required>
+            </div>
+            <div class="formGroup">
+                <!-- <i class="far fa-envelope"></i> -->
+                <input type="email" placeholder="Email" class="form-control" id="email" [(ngModel)]="User.username" name="username" #email="ngModel" [class.is-invalid]="email.invalid && email.touched" required pattern="^[a-z0-9.%+]+@[a-z0-9.-]+\.[a-z]{2,4}" >
+            </div>
+            <div class="formGroup">
+                <!-- <i class="fas fa-lock"></i> -->
+                <input type="password" placeholder="Password" class="form-control" id="password" [(ngModel)]="User.password" name="password" minlength="6" required>
+            </div>
+            <div class="checkBox">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <span class="text">I Agree with Term & Conditions.</span>
+            </div>
+            <button class="btn" [disabled]="userSignin.form.invalid" routerLink="/login">SIGN UP</button>
+        </form>
+        </div>
+
+        <!-- Right section of responsive registration form -->
+        <div class="welcomeDiv">
+            <h2>Welcome Back!</h2>
+            <p class="text">Get in touch with us for our new books and more updates.</p>
+            <button class="btn2" routerLink="/login">LOGIN</button>
+        </div>
+
+    </div>
+</div>

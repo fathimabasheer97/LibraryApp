@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+/* body {
+  margin: 0;
+  padding: 0; 
+  font-family: 'Poppins', sans-serif;
+}  */
+.bg{
+  background:url("https://th.bing.com/th/id/R.d807355cc042f8a6cc98a05aada57727?rik=WlSgZK5JcXG%2bjA&riu=http%3a%2f%2flatestwallpapershd.com%2fwp-content%2fuploads%2f2019%2f01%2fReading-books-essay-wallpaper-HD.jpg&ehk=mqTp1X1zQSwXDjx50giDuS87SNLHHdEerHiSCXSenLI%3d&risl=&pid=ImgRaw&r=0");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height:100vh;
+}
+
+.bg::before{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:25%;
+  height:100%;
+  background:#000;
+  opacity: 0.4;
+}
+.fdiv{
+  position:absolute;
+  top:50%;
+  left:25%;
+  transform:translate(-50%,-50%);
+  width:350px;
+  min-height: 400px;
+  background:#fff;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.5);
+  padding:50px;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+.fdiv h2{
+  color:#777;
+  margin:0 0 40px;
+  padding:0;
+}
+.fdiv .form-group{
+  position:relative;
+  margin:20px 0;
+}
+.fdiv .form-group input{
+  width:100%;
+  font-size: 16px;
+  border:none;
+  border-bottom:2px solid #777;
+  outline:none;
+  padding:10px;
+  padding-left:30px;
+  box-sizing: border-box;
+  font-weight: 700;
+  color:#777;
+}
+.fdiv .input-box input:focus,
+.fdiv .input-box input:valid{
+  border-bottom-color:#5656db;
+}
+.fdiv .input-box .fa{
+  position:absolute;
+  top:8px;
+  left:5px;
+  font-size: 18px;
+  color:#777;
+}
+.fdiv button[type="submit"]{
+  border:black;
+  cursor: pointer;
+  background:#097209;
+  color:#fff;
+  font-weight: bold;
+  transition:0.5s;
+  border-radius: 8px;
+}
+
+@media (max-width:767px){
+  .bg::before{
+    width:100%;
+  }
+  .fdiv{
+    left:50%;
+  }
+}
+
+  
